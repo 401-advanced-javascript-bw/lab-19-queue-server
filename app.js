@@ -8,7 +8,7 @@ const readFile = util.promisify(fs.readFile);
 const writeFile = util.promisify(fs.writeFile);
 
 const read = file => readFile(file);
-const uppercase = buffer => Buffer.from(buffer.toString().toUpperCase());
+const uppercase = buffer => new Buffer.from(buffer.toString().toUpperCase());
 const write = (file, buffer) => writeFile(file, buffer);
 
 /**
@@ -20,9 +20,11 @@ const alterFile = file => {
   return read(file)
     .then(buffer => uppercase(buffer))
     .then(uppercaseBuffer => write(file, uppercaseBuffer))
-    .then(result => QClient.publish('files', 'save', Buffer.from(result)))
-    .catch(err => QClient.publish('files', 'error', Buffer.from(err)));
+    .then(() => QClient.publish('files', 'save', 'file saved!'))
+    .catch(() => QClient.publish('files', 'bad', 'error saving file'));
 };
-
-let file = process.argv.slice(2).shift();
+const FILE_PATH_INDEX = 2;
+const file = process.argv[FILE_PATH_INDEX];
+console.log(file);
+// let file = process.argv.slice(2).shift();
 alterFile(file);
