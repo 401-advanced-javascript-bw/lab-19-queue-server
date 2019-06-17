@@ -7,7 +7,7 @@
 ### Links and Resources
 
 - [submission PR](http://xyz.com)
-- [queue-server] (https://lab-19-queue-server-bw.herokuapp.com/)
+- [queue-server](https://lab-19-queue-server-bw.herokuapp.com/)
 - [logger](https://lab-19-logger-bw.azurewebsites.net)
 - [api-server](https://lab-19-api-server-bw.herokuapp.com/)
 
