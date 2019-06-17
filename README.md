@@ -6,7 +6,7 @@
 
 ### Links and Resources
 
-- [submission PR](http://xyz.com)
+- [submission PR](https://github.com/401-advanced-javascript-bw/lab-19-queue-server/pull/1)
 - [queue-server](https://lab-19-queue-server-bw.herokuapp.com/)
 - [logger](https://lab-19-logger-bw.azurewebsites.net)
 - [api-server](https://lab-19-api-server-bw.herokuapp.com/)
