@@ -13,7 +13,8 @@
 
 #### Documentation
 
-- [jsdoc](http://xyz.com) (Server assignments)
+- [jsdoc](http://xyz.com)
+- [swagger](https://lab-19-api-server-bw.herokuapp.com/api/v1/doc/)
 
 ### Modules
 
