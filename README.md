@@ -32,3 +32,5 @@
 - `npm i`
 - `node server.js`
 - `node app.js ./files/test.txt`
+
+![](./assets/uml.jpg)
